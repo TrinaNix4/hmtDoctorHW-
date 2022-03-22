@@ -1,4 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
+import './App.css'
+
 
 function App() {
   return (
@@ -12,9 +14,13 @@ function App() {
           alignItems: "center",
         }}
       >
-        <h1>Starter App</h1>
+        <h1>Appointments App</h1>
         <nav>
-          <Link to="/home">Home</Link> - <Link to="/about">About</Link>
+          <Link className='navLink' to="/home">Home</Link>
+          <Link className='navLink'to="/about">About</Link> 
+          <Link className='navLink'to="/physicians">Physicians</Link> 
+          <Link className='navLink'to="/patients">Patients</Link> 
+          <Link className='navLink'to="/appointments">Appointments</Link> 
         </nav>
       </nav>
       <div
