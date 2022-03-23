@@ -1,11 +1,16 @@
 import React from 'react'
+import useAxios from 'axios-hooks'
+import AxiosContainer from '../components/AxiosContainer';
+import StringifyJSON from '../components/StringifyJSON';
 
 const Appointments = ()=>{
+  const [{data, loading, error}, refetch] = useAxios('/api/appointments');
     return (
-        <div>
-            <h1>Appointments</h1>
-        </div>
+        <AxiosContainer title={"Appointments"} loading={loading} error={error}>
+        <StringifyJSON json={data}/>
+        </AxiosContainer>
+
     )
 }
 
-export default Appointments;
+export default Appointments; 

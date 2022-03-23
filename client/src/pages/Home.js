@@ -1,9 +1,9 @@
 const Home = ()=>{
     return (
         <div>
-            <h1>Welcome to Starter Project!</h1>
-            <p>This is project meant to as a starting point for other projects</p>
-            <p>Check the about page and the README.md</p>
+            <h1>Admin Portal</h1>
+            <p>Use this app to view appointments, create new appointments, delete appointments, or edit existing appointments </p>
+      
         </div>
     )
 }

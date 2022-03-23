@@ -19,7 +19,7 @@ def create
 end 
 
 def update 
- if(@physician.update(physician_params)
+ if(@physician.update(physician_params))
     render json: @physician
   else
     render json: {errors: @physician.errors.full_messages}, status: 422
@@ -30,29 +30,7 @@ def destroy
   render json: @physician.destroy
 end 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 private
- 
 def set_physician
     @physician = Physician.find(params[:id])
 end

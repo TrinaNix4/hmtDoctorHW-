@@ -1,5 +1,5 @@
 class Api::AppointmentsController < ApplicationController
-before_action: :set_appointment, only: [:show, :destroy, :update]
+before_action :set_appointment, only: [:show, :destroy, :update]
 
 def index
   render json: Appointment.all
