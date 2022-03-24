@@ -16,7 +16,7 @@ function App() {
       >
         <h1>Appointments App</h1>
         <nav>
-          <Link className='navLink' to="/home">Home</Link>
+          <Link className='navLink'to="/home">Home</Link>
           <Link className='navLink'to="/about">About</Link> 
           <Link className='navLink'to="/physicians">Physicians</Link> 
           <Link className='navLink'to="/patients">Patients</Link> 

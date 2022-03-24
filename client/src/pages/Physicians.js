@@ -14,3 +14,5 @@ const Physicians = ()=>{
 }
 
 export default Physicians; 
+
+

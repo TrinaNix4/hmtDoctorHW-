@@ -7,6 +7,7 @@ end
 
 
 def show
+  appointment = Appointment.find(params[:id])
   render json: @appointment
 end
 
@@ -20,6 +21,7 @@ def create
 end
 
 def update
+  appointment = Appointment.find(params[:id])
   if(@appointment.update(appointment_params))
     render json: @appointment
   else
@@ -29,6 +31,7 @@ end
 
 
 def destroy
+  appointment = Appointment.find(params[:id])
   render json: @appointment.destroy 
 end 
 
@@ -38,7 +41,12 @@ def set_appointment
 end
 
 def appointment_params
-  params.require(:appointment).permit(:appointment_date)
+  params.require(:appointment).permit(:appointment_date, :physician_id, :patient_id)
 end
 
+def appointment_params_only_date
+  params.require(:appointment).permit(:appointment_date)
 end 
+end 
+
+# physician_id and patient_id required to create an appointment

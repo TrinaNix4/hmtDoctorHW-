@@ -18,9 +18,9 @@ pat1 = Patient.create(name:"Uhm Lastnametew")
 pat2 = Patient.create(name:"Billy Antimmy")
 pat3 = Patient.create(name:"Jonesey Lastnameh")
 
-Appointment.create(appointment_date:"2015-03-25", patient_id:pat1.id, physician_id:phy1.id )
-Appointment.create(appointment_date:"2015-04-26", patient_id:pat2.id, physician_id:phy2.id)
-Appointment.create(appointment_date:"2015-05-27", patient_id:pat3.id, physician_id:phy3.id)
+# Appointment.create(appointment_date:"2015-03-25", patient_id:pat1.id, physician_id:phy1.id )
+# Appointment.create(appointment_date:"2015-04-26", patient_id:pat2.id, physician_id:phy2.id)
+# Appointment.create(appointment_date:"2015-05-27", patient_id:pat3.id, physician_id:phy3.id)
 
 
 puts "physician size: #{Physician.all.length}"
